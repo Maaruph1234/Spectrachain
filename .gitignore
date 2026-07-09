@@ -1,0 +1,20 @@
+# Environment files — never push private keys
+.env
+.env.local
+*.env
+
+# Dependencies
+node_modules/
+spectrachain-frontend/node_modules/
+spectrachain-backend/node_modules/
+
+# Foundry build artifacts
+spectrachain-contracts/out/
+spectrachain-contracts/cache/
+spectrachain-contracts/broadcast/
+
+# Vite build
+spectrachain-frontend/dist/
+
+# Mac
+.DS_Store

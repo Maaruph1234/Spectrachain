@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-const BASE = 'http://localhost:4000/api'
-
+const BASE = import.meta.env.VITE_API_URL || 'https://spectrachain-production.up.railway.app/api'
 const api = axios.create({ baseURL: BASE })
 
 // ── AUTH ──────────────────────────────────────────────────────────────────────
